@@ -22,16 +22,10 @@ func main() {
 		var userInput int
 		fmt.Scan(&userInput)
 
-		// Используя значение переменной `userInput` определите пользователя
-		// из глобального массива `choices`. Результат сохраните в переменную.
 		userChoice := choices[userInput-1]
 		computerChoice := generateComputerChoice()
 
 		findWinner(userChoice, computerChoice)
-		// Используя функцию `generateComputerChoice` симулируйте выбор компьютера.
-		// Результат сохраните в переменную.
-
-		// Реализуйте и вызовите функцию `findWinner` для определения победителя.
 
 		var input string
 		fmt.Println("Еще раз (д/н)?:")
@@ -42,8 +36,6 @@ func main() {
 		}
 	}
 
-	// Если пользователь больше не хочет играть (ввел "н"), остановите
-	// выполнение цикла командой `break`
 	fmt.Println("Игра окончена")
 
 	fmt.Printf("Вы выиграли %d раз", userWins)
